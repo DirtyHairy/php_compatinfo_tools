@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpcompatinfo
+    reference="CS_ALL"
+    report="xml"
+    reportFileAppend="false"
+    cacheDriver="file"
+    recursive="true"
+    fileExtensions="php, inc, phtml"
+    consoleProgress="true"
+    verbose="false"
+    >
+    <cache id="file">
+        <options>
+            <gc_probability>1</gc_probability>
+            <gc_maxlifetime>86400</gc_maxlifetime>
+        </options>
+    </cache>
+    
+    <plugins>
+        <reference name="translit"
+            class="PHP_CompatInfo_Reference_Translit"
+            file="./references/translit.php">
+            <arguments>
+            </arguments>
+        </reference>
+        <reference name="CS_ALL"
+            class="PHP_CompatInfo_Reference_CS_ALL"
+            file="./references/CS_ALL.php">
+            <arguments>
+            </arguments>
+        </reference>
+    </plugins>
+
+</phpcompatinfo>
